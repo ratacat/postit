@@ -190,6 +190,12 @@ app.delete("/pictures/:id", function (req, res){
     })
 });
 
+app.get("/logout", function(req,res) {
+  req.session.destroy(function(){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    res.redirect('/');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+  });        
+})
+
 
 
 app.listen(process.env.PORT || 3000)

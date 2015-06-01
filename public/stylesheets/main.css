@@ -196,3 +196,13 @@ li p {
     font-size: 16px; 
     text-align: center;
 }
+
+div#logout {
+    position: relative;
+    float: right;
+    margin-top:10px;
+}
+
+div#logout span {
+    cursor:pointer;
+}
